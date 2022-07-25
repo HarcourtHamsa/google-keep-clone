@@ -1,6 +1,6 @@
 ## Google Keep Clone
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://google-keep-clone-nu.vercel.app/](https://google-keep-clone-nu.vercel.app/) with your browser to see the result.
 
 ## Technologies used
 
