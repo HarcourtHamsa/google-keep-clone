@@ -1,0 +1,88 @@
+@import "./variables";
+
+.card {
+  width: 50%;
+  margin: auto;
+  padding: 0 12px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  // box-shadow: 0px 2px 5px 2px $lightGray;
+  border: 1px solid $lightGray;
+  background-color: white;
+
+  input {
+    min-height: 50px;
+    font-size: 1rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  [class="card-footer"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    [class="icons"] {
+      display: flex;
+    }
+
+    button {
+      border: 0;
+      background-color: inherit;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    [class="drawer"] {
+      background-color: white;
+      position: absolute;
+      bottom: -100px;
+      left: 10%;
+      width: fit-content;
+      width: fit-content;
+      border-radius: 3px;
+      // box-shadow: 0px 2px 5px 2px $lightGray;
+      border: 1px solid $lightGray;
+
+      ul {
+        padding-left: 0;
+        margin: 0;
+
+        li {
+          list-style-type: none;
+          font-size: 14px;
+          padding: 10px 20px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $lightGray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+}

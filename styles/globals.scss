@@ -1,0 +1,52 @@
+@import "./variables";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  // font-weight: 600;
+}
+
+@font-face {
+  font-family: "ProductSans";
+  src: url("../assets/fonts/FontsFree-Net-SFProText-Regular.ttf");
+
+}
+
+@font-face {
+  font-family: "JetBrains";
+  src: url("../assets/fonts/JetBrainsMono-Regular.ttf");
+}
+
+* {
+  font-family: "ProductSans";
+  // font-family: 'JetBrains';
+}
+
+// input, textarea{
+//   font-family: 'JetBrains';
+// }
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+.hover_effect {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+
+    background-color: $lightGray;
+    border-radius: 50%;
+  }
+}

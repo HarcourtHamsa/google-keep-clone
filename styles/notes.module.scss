@@ -1,0 +1,41 @@
+@import "./_variables.scss";
+
+.notes {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  div {
+    height: fit-content;
+    border-radius: $radius;
+    border: 1px solid $lightGray;
+    padding: 12px;
+
+    h4 {
+      font-weight: 200;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 2px 5px 2px $lightGray;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .notes {
+    width: 70vw;
+    margin: 4rem auto;
+    // background-color: red;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}

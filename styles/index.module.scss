@@ -1,0 +1,146 @@
+@import "./variables";
+
+.body {
+  [class="logo_container"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+
+.catalyst {
+  width: 50%;
+  height: 50px;
+  padding: 0 12px;
+  margin: auto;
+  //   background-color: red;
+  border: solid transparent;
+  border-width: 1px 1px 1px 6px;
+  min-height: 28px;
+  display: flex;
+  border-radius: $radius;
+  box-shadow: 0px 2px 5px 2px $lightGray;
+  z-index: -1;
+
+  flex: 1;
+  border: 0;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.card {
+  width: 50%;
+  margin: auto;
+  padding: 0 12px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius;
+  box-shadow: 0px 2px 5px 2px $lightGray;
+  border: 1px solid $lightGray;
+
+  input {
+    min-height: 50px;
+    font-size: 1rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    font-size: 14px;
+    outline: none;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  [class="card-footer"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      border: 0;
+      background-color: inherit;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .catalyst,
+  .card {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.514);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999999;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: fit-content;
+  z-index: 9999999999999999999999;
+
+  h4 {
+    font-weight: normal;
+  }
+
+  // [class="footer"] {
+  //   display: flex;
+  //   justify-content: space-between;
+
+
+
+  //   button {
+  //     border: 0;
+  //     background-color: transparent;
+
+  //     &:hover {
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+}
+
+@media only screen and (max-width: 490px) {
+  .modal {
+    width: 70%;
+
+    [class="footer"] {
+     
+  
+      [class="drawer"] {
+        width: fit-content;
+      }
+    }
+  }
+}
